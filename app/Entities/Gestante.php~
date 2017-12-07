@@ -1,0 +1,82 @@
+<?php
+
+
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Gestante
+ *
+ * @ORM\Table(name="gestante")
+ * @ORM\Entity
+ */
+class Gestante
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="id", type="string", length=8, nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="lng", type="string", length=20, nullable=true)
+     */
+    private $lng;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="lat", type="string", length=20, nullable=true)
+     */
+    private $lat;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="elevation", type="string", length=30, nullable=true)
+     */
+    private $elevation;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="title", type="string", length=200, nullable=true)
+     */
+    private $title;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="distance", type="string", length=20, nullable=false)
+     */
+    private $distance;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="type", type="string", length=30, nullable=true)
+     */
+    private $type;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="webpage", type="string", length=200, nullable=false)
+     */
+    private $webpage;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="img", type="string", length=20, nullable=false)
+     */
+    private $img;
+
+
+}
+
